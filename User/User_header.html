@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Xem tất cả các ứng dụng của Trello</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css" />
+    <script src="../javascript/jquery.min.js"></script>
+     <script src = "../bootstrap/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../css/tour.css" />
+    <link rel="stylesheet" href="../css/footer.css"/>
+    <link rel="stylesheet" href="../css/login.css" />
+</head>
+<body>
+    <nav class="navbar-inverse" style="background-color: #3a476f;">
+        <div class="container">
+            <div class="col-md-2 col-sm-2 col-xs-4">
+                <a href="#"><img src="image/guest/logo_blue.svg" style="background: none" alt="" width="100px" height="60px">
+                </a>
+            </div>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a>
+                </li>
+                <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!--<nav class="navbar navbar-inverse" style="background-color: blue">
+        <div class="container">
+            <div class="col-md-1 col-sm-1 col-xs-2 table">
+                <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" style="height: 35px;">Bảng
+                    <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu">
+                    <div class="header-search">
+                        <input type="text" class="form-control" placeholder="Tìm theo bảng tên..." name="search">
+                    </div>
+                </ul>
+            </div>
+            <div class="col-md-2 col-sm-2 col-xs-4 logo" style="margin-top: 6px;margin-left: -300px;">
+                <div class="header-search">
+                    <input type="text" class="form-control" placeholder="Tìm theo bảng tên..." name="search">
+                </div>
+            </div>
+            <div class="col-md-2 col-sm-2 col-xs-4 logo">
+                <a href="#"><img src="image/guest/logo_blue.svg" style="background: none" alt="" width="100px" height="60px">
+                </a>
+            </div>
+            <ul class="nav navbar-nav navbar-right" >
+                <li class="navbar-right dropdown">
+                    <button class="btn btn-primary glyphicon glyphicon-user" type="button" data-toggle="dropdown"><span class="caret"></span></button>
+                    <ul class="dropdown-menu" style="margin-top: 10px;width: 200px;">
+                        <li><h5>thanhquang123</h5></li>
+                        <hr>
+                        <li><a class="user-item" href="#">Lý lịch</a></li>
+                        <li><a class="user-item" href="#">Thẻ</a></li>
+                        <li><a class="user-item" href="#">Cài đặt</a></li>
+                        <hr>
+                        <li><a class="user-item" href="#">Trợ giúp</a></li>
+                        <li><a class="user-item" href="#">Phím tắt</a></li>
+                        <li><a class="user-item" href="#">Thay đổi ngôn ngữ</a></li>
+                        <hr>
+                        <li><a class="user-item" href="index.html">Đăng xuất</a></li>
+                    </ul>
+                </li>
+                <li class="navbar-right dropdown">
+                    <button class="btn btn-primary glyphicon glyphicon-bell" type="button" data-toggle="dropdown"><span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu notify" style="margin-top: 10px;">
+                        <h2>Thông báo</h2>
+                        <hr>
+                        <h3>Hiện tại bạn chưa có thông báo nào.</h3>
+                    </ul>
+                </li>
+                <li class="navbar-right dropdown">
+                    <button class="btn btn-primary glyphicon glyphicon-info-sign" type="button" data-toggle="dropdown"><span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" style="margin-top: 10px;width: 300px;">
+                        <h2> Thông tin</h2>
+                        <hr>
+                        <div class="information">
+                            <a href="#"><img id="img-tips" src="image/user/thongtin.jpg" alt=""></a>
+                            <a href="#" class="btn btn-basic" role="button">Nâng cao hiệu quả sử dụng <br>của bảng bằng những Tính năng <br>mở rộng của Trello</a>
+                            <a href="#" id="tips">Xem một mẹo mới</a>
+                            <hr>
+                            <div class="navbar-collapse collapse" id="menu">
+                                <ul class="nav navbar-nav">
+                                    <li><a class="tips-item" href="#">Hướng dẫn</a></li>
+                                    <li><a class="tips-item" href="#">Biểu phí</a></li>
+                                    <li><a class="tips-item" href="#">Ứng dụng</a></li>
+                                </ul>
+                            </div>
+                            <div class="navbar-collapse collapse" id="menu-1">
+                                <ul class="nav navbar-nav tips-item-2">
+                                    <li><a class="tips-item" href="#">Blog</a></li>
+                                    <li><a class="tips-item" href="#">Thêm</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </ul>
+                </li>
+                <li class="navbar-right dropdown">
+                    <button class="btn btn-primary glyphicon glyphicon-plus" type="button" data-toggle="dropdown"><span class="caret"></span></button>
+                    <ul class="dropdown-menu" style="margin-top: 10px;width: 300px;">
+                        <h2> Tạo mới</h2>
+                        <hr>
+                        <div class="collapse navbar-collapse" id="myNavbar">
+                            <ul class="nav navbar-nav ">
+                                <li><a class="create-table" href="#"><strong>Tạo Bảng... </strong><br><span class="sub-name">Một bảng được tạo thành từ các thẻ được sắp xếp trong danh sách. Sử dụng bảng để quản lý các dự án, theo dõi thông tin, hoặc tổ chức bất cứ việc gì.</span></a></li><hr>
+                                <li><a class="create-team" href="#"><strong>Tạo Nhóm...</strong><br>
+                                <span class="sub-name">Một nhóm là tập hợp các bảng và mọi người. Sử dụng nhóm để tổ chức công ty của bạn, hỗ trợ người bận rộn, gia đình hoặc bạn bè.</span></a></li><hr>
+                                <li><a class="create-table-business" href="#"><strong>Tạo Nhóm Business...</strong><br><span class="sub-name">Với Business Class nhóm của bạn có nhiều kiểm soát an ninh, hành chính hơn và Power-Up không giới hạn.</span></a></li>
+                            </ul>
+                        </div>
+                    </ul>
+                </li>
+            </ul>
+        </div> 
+    </nav>-->
+</body>
+</html>
